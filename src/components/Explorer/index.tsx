@@ -1,10 +1,6 @@
 import {
-  Code2,
-  Cog,
   Cpu,
   FileJson,
-  Film,
-  Joystick,
   MoreHorizontal,
   Terminal,
 } from 'lucide-react';
@@ -31,12 +27,7 @@ export const explorerFiles: Record<string, FileType> = {
     icon: <Terminal size={16} />,
     title: "General",
   },
-  "/terminal/fish": { icon: <Cog size={16} />, title: "config.fish" },
   "/others/dev-setup": { icon: <Cpu size={16} />, title: "dev.setup" },
-  "/others/gaming-setup": {
-    icon: <Joystick size={16} />,
-    title: "gaming.setup",
-  },
 };
 
 export function Explorer() {
@@ -73,20 +64,12 @@ export function Explorer() {
               <Terminal size={16} />
               General
             </File>
-            <File href="/terminal/fish">
-              <Cog size={16} />
-              config.fish
-            </File>
           </Folder>
 
           <Folder title="Others">
             <File href="/others/dev-setup">
               <Cpu size={16} />
               dev.setup
-            </File>
-            <File href="/others/gaming-setup">
-              <Joystick size={16} />
-              gaming.setup
             </File>
             {/* <File href="/others/recording-setup">
             <Film size={16} />

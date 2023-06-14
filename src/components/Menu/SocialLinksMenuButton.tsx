@@ -5,44 +5,26 @@ import {
   Github,
   Instagram,
   Linkedin,
-  Rocket,
-  Twitter,
   User,
-  Youtube
 } from 'lucide-react'
 import { MenuButton } from './MenuButton'
 
 const socialLinks = [
   {
     name: 'github',
-    url: 'https://github.com/diego3g',
+    url: 'https://github.com/jahncarlos125',
     icon: <Github size={14} />
   },
   {
     name: 'instagram',
-    url: 'https://instagram.com/dieegosf',
+    url: 'https://instagram.com/jahn_brito/',
     icon: <Instagram size={14} />
   },
   {
     name: 'linkedin',
-    url: 'https://www.linkedin.com/in/diego-schell-fernandes/',
+    url: 'https://www.linkedin.com/in/jahncarlos/',
     icon: <Linkedin size={14} />
-  },
-  {
-    name: 'rocketseat',
-    url: 'https://www.rocketseat.com.br/',
-    icon: <Rocket size={14} />
-  },
-  {
-    name: 'twitter',
-    url: 'https://twitter.com/dieegosf',
-    icon: <Twitter size={14} />
-  },
-  {
-    name: 'youtube',
-    url: 'https://www.youtube.com/@rocketseat',
-    icon: <Youtube size={14} />
-  },
+  }
 ]
 
 export function SocialLinksMenuButton() {
